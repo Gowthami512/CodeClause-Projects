@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmusic</title>
+    <link rel="stylesheet" href="music player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="icon" href="design/Gmusic-logo.png">
+</head>
+<body>
+    <div class="container-head">
+        <div class="head"> 
+            <nav class="menu">   
+                <ul>
+                    <li id="tit-txt">Gmusic</li>
+                    <li id="menu">Home </li>
+                    <li id="menu">Recent</li>
+                    <li class="fa fa-search seaarch"></li>
+                    <li>
+                        <!--<div class="cir">
+                            <img src="design/nft.png" alt="notification" id="nfc">
+                        </div>-->
+                        <i class="fa fa-bell" style="font-size:18px;color:rgb(233, 223, 223)"></i>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="music-head">
+                <div class="music-logo">
+                    <img src="design/5.png" alt="logo" draggable="false">
+                </div>
+                <div class="music-title">
+                    <h1>Listen<span class="txt-et"> Music</span> With Us</h1>
+                    <div class="mus-tit-txt">
+                        <p>Sometimes Music is the only thing that takes your mind off everything  else.</p>
+                    </div>
+                </div>
+                <div class="ser-win">
+                    <input type="text" id="inp-ser" placeholder="Search here...">
+                    <button>Search</button>
+                   
+                </div>
+               
+                
+            </div>
+
+        </div>
+    </div>
+    
+    <!--<div class="search">
+        <input type="text">
+    </div> -->
+
+    <div class="music-player">
+        <h2><span>S</span>ingers</h2>
+        <div class="music-list">
+           
+            <div class="rec-music  singers">
+                <div class="song-logo">
+                    <img class="sg-lst" src="Movie-songs/anirudh.jpg" alt="aniruth"draggable="false" >
+                </div>
+                 <div class="song-author">
+                    <p>Aniruth</p>
+                    <span>Ravichander</span>
+                 </div>
+                 
+            </div>
+
+            <div class="rec-music  singers">
+                <div class="song-logo">
+                    <img class="sg-lst" src="Movie-songs/Ar rahman.jpg" alt="Ar Rahman"   draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>Ar</p>
+                    <span>Rahman</span>
+                   
+                 </div>
+                 
+            </div>
+            <div class="rec-music singers">
+                <div class="song-logo">
+                    <img class="sg-lst sml-img" src="Movie-songs/U1-songs.jpg" alt="U1"   draggable="false"> 
+                </div>
+                 <div class="song-author">
+                    <p>U1 Shankar</p>
+                    <span>Raja</span>
+                 </div>
+                 
+            </div>
+
+            <div class="rec-music singers">
+                <div class="song-logo">
+                    <img class="sg-lst" src="Movie-songs/vijay_antony.jpg" alt="Ar Rahman"   draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>Vijay</p>
+                    <span>Antony</span>
+                 </div>
+                 
+            </div>
+            <div class="rec-music  singers">
+                <div class="song-logo">
+                    <img class="sg-lst" src="Movie-songs/sid_sriram.jpg" alt="sidsriram" style="height: 200px;width: 200px;"   draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>Sid</p>
+                    <span>Sriram</span>
+                 </div>
+                 
+            </div>
+            <div class="rec-music  singers">
+                <div class="song-logo">
+                    <img class="sg-lst" src="Movie-songs/shreya Ghoshal.jpg" alt="shreya" style="height: 200px;width: 200px;"   draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>Shreya</p>
+                    <span>Ghoshal</span>
+                 </div>
+                 
+            </div>
+        </div>
+
+
+        <h2>Trending Songs</h2>
+        <div class="music-list-1">
+           
+            <div class="rec-music">
+                <div class="song-logo">
+                    <img class="play-list" src="Movie-songs/unstopable.png" alt="song" style="height:125px" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p  id="en-artist">Sia</p>
+                    <span>Unstopable</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music">
+                <div class="song-logo">
+                    <img  class="play-list" src="Movie-songs/who-says.jpg" alt="song" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p  id="en-artist">Selena Gomez</p>
+                    <span>Who Says</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="rec-music">
+                <div class="song-logo">
+                    <img  class="play-list" src="Movie-songs/scares-to-beautiful.jpg" alt="song" style="height:125px" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p id="en-artist">Alessia Cara</p>
+                    <span>Scares To Your </span><br>
+                    <span>Beautiful</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music">
+                <div class="song-logo">
+                    <img class="play-list" src="Movie-songs/beliver.jpg"  alt="song" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p  id="en-artist">Imagine Dragons</p>
+                    <span>Beliver</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music">
+                <div class="song-logo">
+                    <img  class="play-list" src="Movie-songs/baby_baby.jpg" alt="song" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p  id="en-artist">Justin Bieber</p>
+                    <span>Baby Baby</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music">
+                <div class="song-logo">
+                    <img  class="play-list" src="Movie-songs/shape of you.jpg" alt="song"  draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p  id="en-artist">Ed Sheeran </p>
+                    <span>Shape of You</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+
+        <h2>Playlist</h2>
+        <div class="music-list-1">
+           
+            <div class="rec-music  song-display" id="rec-music-1" onclick="song_play()">
+                <div class="song-logo">
+                   
+                    <img   id="sng-img-1" class="play-list song-cmp" src="Movie-songs/Sk-ethir neechal.jpg" alt="song" draggable="false">
+
+                </div>
+                 <div class="song-author" >
+                    <p>Aniruth</p>
+                    <span>Ethir Neechal</span>
+                                 
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+                
+            </div>
+
+            <div class="rec-music song-display" id="rec-music-1"  onclick="song_play_1()">
+                <div class="song-logo">
+                    <img   id="sng-img-2" class="play-list" src="Movie-songs/veeran.jpg" alt="song" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>Hiphop Tamizha</p>
+                    <span>Veeran Thiruvizha</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="rec-music song-display" id="rec-music-1" onclick="song_play()">
+                <div class="song-logo">
+                    <img   id="sng-img-3" class="play-list song-3" class="play-list" src="Movie-songs/maamannan.jpg" alt="song" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>Ar Rahman</p>
+                    <span>Jigu Jigu Rail</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music song-display" id="rec_Mus" onclick="song_play()">
+                <div class="song-logo">
+                    <img  id="sng-img-4" class="play-list song-3" class="play-list" src="Movie-songs/Mun-sellada.jpg" alt="song" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>Aniruth</p>
+                    <span>Mun Sellada</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music song-display" id="rec-music-1" onclick="song_play()">
+                <div class="song-logo">
+                    <img  id="sng-img-5" class="play-list" src="Movie-songs/poradalam.jpg" alt="song" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>Armaan Malik</p>
+                    <span>Pouraadalaam</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music song-display" id="rec-music-1" onclick="song_play()">
+                <div class="song-logo">
+                    <img  id="sng-img-6"  class="play-list" src="Movie-songs/kayilae aagasam.jpg" alt="song" draggable="false">
+                </div>
+                 <div class="song-author">
+                    <p>G.V Prakash</p>
+                    <span>Kayilae Aagasam</span>
+                 </div>
+                 <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="music-list-1">
+        
+        <div class="rec-music  song-display" id="rec-music-1" onclick="song_play()">
+            <div class="song-logo">
+                
+                <img   id="sng-img-1" class="play-list song-cmp" src="Movie-songs/railin_oligal.jpg" alt="song" draggable="false">
+
+            </div>
+            <div class="song-author" >
+                <p>Pradeep Kumar</p> 
+                <span>Railin Oligal</span>
+                        
+            </div>
+            <div class="audio  g-audio" >
+                <audio controls >
+                    <source src="songs/Mun-Sellada.mp3">
+                </audio>
+            </div>
+            
+        </div>
+
+            <div class="rec-music song-display" id="recMus"  onclick="song_play_1()">
+                <div class="song-logo">
+                    <img   id="sng-img-2" class="play-list" src="Movie-songs/vk_chennai.jpg" alt="song" style="height: 125px;" draggable="false">
+                </div>
+                    <div class="song-author">
+                        <p>Aniruth</p> 
+                        <span>Engadi Porandha</span>
+                </div>
+                <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+            
+            <div class="rec-music song-display" id="recMus" onclick="song_play()">
+                <div class="song-logo">
+                    <img   id="sng-img-3" class="play-list song-3" class="play-list" src="Movie-songs/vinnellam.jpg" alt="song" draggable="false">
+                </div>
+                    <div class="song-author">
+                    <p>Lopson Rajkumar</p>
+                    <span>Vinnalam Olli Minnum</span>
+                </div>
+                <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music song-display" id="rec_Mus" onclick="song_play()">
+                <div class="song-logo">
+                    <img  id="sng-img-4" class="play-list song-3" class="play-list" src="Movie-songs/marakavillayea.jpg" alt="song" draggable="false">
+                </div>
+                    <div class="song-author">
+                    <p>Aniruth</p>
+                    <span>Marakavillayee</span>
+                </div>
+                <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="rec-music song-display" id="recMus" onclick="song_play()">
+                <div class="song-logo">
+                    <img  id="sng-img-5" class="play-list" src="Movie-songs/kanimoliyea.jpg" alt="song" draggable="false">
+                </div>
+                <div class="song-author">
+                    <p>Megha, Karthik</p>
+                    <span>Kani Mozhiyae</span>
+                </div>
+                <div class="audio  g-audio" >
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+
+            </div>
+
+            <div class="rec-music song-display" id="recMus" onclick="song_play()">
+                <div class="song-logo">
+                    <img  id="sng-img-6"  class="play-list" src="Movie-songs/Hayyoda-jawan.jpg" alt="song" draggable="false">
+                </div>
+                    <div class="song-author">
+                    <p>Aniruth</p>
+                    <span>Hayyoda</span>
+                </div>
+                <div class="audio g-audio">
+                    <audio controls >
+                        <source src="songs/Mun-Sellada.mp3">
+                    </audio>
+                </div>
+            </div>
+
+           
+    </div>
+
+</div>
+
+<h2> <span  class="hit-txt">Hit</span> Songs</h2>
+<div class="add">
+    <!--<div class="add-ls">
+        <img id="sec-img" src="./design/4.png" alt="logo">
+    </div> -->
+   
+    <div class="music-list-1  top-sngs">
+        <div class="wrapper">
+            <p class="left-ang">&#9001;
+            </p>
+        </div>
+        
+        <div class="rec-music  song-display"  id="songList" onclick="song_play()">
+            <div class="song-logo"  id="song-logo1">
+                
+                <img   id="sng-img-1" class="play-list song-cmp" src="Movie-songs/jailler.jpg" alt="song" draggable="false">
+
+            </div>
+            <div class="song-author" >
+                <p>Aniruth</p>  
+                <span>Hukum-Thalaivar</span>          
+            </div>
+            <div class="audio">
+                <audio controls >
+                    <source src="songs/Mun-Sellada.mp3">
+                </audio>
+            </div>
+
+
+
+                
+            
+        </div>
+
+        <div class="rec-music song-display"  id="songList"  onclick="song_play_1()">
+            <div class="song-logo"  id="song-logo2">
+                <img   id="sng-img-2" class="play-list" src="Movie-songs/leo.jpg" alt="song" draggable="false">
+            </div>
+                <div class="song-author">
+                <p>Aniruth</p>
+                <span>Badass</span>
+            </div>
+            <div class="audio">
+                <audio controls >
+                    <source src="songs/Mun-Sellada.mp3">
+                </audio>
+            </div>
+        </div>
+        
+        <div class="rec-music song-display"  id="songList" >
+            <div class="song-logo" id="song-logo3">
+                <img   id="sng-img-3" class="play-list song-3" class="play-list" src="Movie-songs/Kgf.jpg" alt="song" draggable="false">
+            </div>
+                <div class="song-author">
+                <p>Shachin Basrur</p>
+                <span>Dheera Dhreera</span>
+            </div>
+            <div class="audio">
+                <audio controls >
+                    <source src="songs/Mun-Sellada.mp3">
+                </audio>
+            </div>
+        </div>
+
+        <div class="rec-music song-display"  id="songList" >
+            <div class="song-logo" id="song-logo3">
+                <img   id="sng-img-3" class="play-list song-3" class="play-list" src="Movie-songs/vikram.jpg" alt="song" draggable="false">
+            </div>
+                <div class="song-author">
+                <p>Aniruth</p>
+                <span>Once Upon a time</span>
+            </div>
+            <div class="audio">
+                <audio controls >
+                    <source src="songs/Mun-Sellada.mp3">
+                </audio>
+            </div>
+        </div>
+        
+
+  
+        <div class="wrapper">
+            <p class="right-ang">&#9002;</p>
+           
+        </div>
+        
+     </div>   
+    
+</div>
+
+     <div class="app-des-con">
+        <div class="app-logo">
+            <img src="design/Gmusic.png" alt="">
+        </div>
+        <div class="app-des">
+            <div class="app-dw">
+                <img src="design/Top_sng.png" alt="sng">
+                
+            </div>
+            <div class="app-dw">
+                <img src="design/bolly_Wood-removebg-preview.png" alt="sng">
+                
+            </div>
+            <div class="app-dw">
+                <img src="design/tolly_wood.png" alt="sng">
+                
+                
+            </div>
+            <div class="app-dw">
+                <img src="design/devotional.png" alt="sng">
+                
+            </div>
+            <div class="app-dw">
+                <img src="design/frnds_sng-bg.png" alt="sng">
+            </div>
+           
+        </div>
+       
+     </div>
+
+     <div class="dev-detail">
+        <h5>@2023 This project Developed by Gowthami Palanisamy</h5>
+     </div>
+
+
+<footer>
+    <div class="rec-music curt-play" >
+        <nav>
+            <div class="close">
+                X
+            </div>
+        </nav>
+        <div class="song-logo">
+            <img id="curtSngImg" class="play-list" src="Movie-songs/kayilae aagasam.jpg" alt="song" draggable="false">
+        </div>
+         <div class="song-author">
+            <p id="ft-txt">Aniruth</p>
+            <button>Play Now</button>
+         </div>
+        
+    </div>
+</footer>
+
+<script>
+    const songs = ["anirudh", "who-says", "song3"];
+    const snglst=document.getElementById("songList");
+    const ids=["song-logo1,song-logo2"]
+    snglst.addEventListener("click",()=>{
+        ids.forEach(id=>{
+            const slt=document.getElementById(`song-logo${id}`);
+            slt.addEventListener("click",()=>{
+
+
+            });
+
+        });
+
+    });
+
+   
+   
+   /*document.addEventListener("click", function () {
+        // Get all elements with the class "rec-music"
+        var recMusicDivs = document.querySelectorAll('.rec-music');
+
+        // Add a click event listener to each rec-music div
+        recMusicDivs.forEach(function (div) {
+            div.addEventListener("click", function () {
+                // Get the image element inside the clicked rec-music div
+                var imgElement = div.querySelector('.play-list');
+
+                // Change the image source as needed
+                // For example, you can set a new image source
+                imgElement.src =`Movie-songs/${aniruth}.jpg`;
+            });
+        });
+    });
+*/
+     /*let clk=documnet.getElementById("rec-music-1");
+     let img=document.getElementById("sng-img");
+     let curtSngImg=document.getElementById("curtSngImg");
+       
+     clk.addEventListerner("click", function(){
+       
+        curtSngImg.src=img.src;
+
+    })
+    let img=document.getElementById("sng-img");
+        let curtSngImg=document.getElementById("curtSngImg");
+
+    
+    function song_play(){
+        let img=document.getElementById("sng-img");
+        let curtSngImg=document.getElementById("curtSngImg");
+        curtSngImg.src=img.src;
+
+        /*if(n===1){
+           
+            let curtSngImg=document.getElementById("curtSngImg");
+
+            curtSngImg.src=img.src;
+
+        }
+        else if(n===2){
+            let img=document.getElementById("sng-img");
+            let curtSngImg=document.getElementById("curtSngImg");
+
+            curtSngImg.src=img.src;
+
+        }
+       
+
+    }
+    function song_play_1(){
+       
+        curtSngImg.src=img.src;
+
+    }
+    
+    
+    /*
+    curtSngImg.src=img.src;
+    function changeImg(clickId){
+        var images={
+            "sng-imgs-1":"maamannan.jpg" ,
+            "sng-imgs-2":"Movie-songs/maamannan.jpg" ,
+            "sng-imgs-3":"Movie-songs/maamannan.jpg" ,
+            "sng-imgs-4":"Movie-songs/maamannan.jpg" ,
+            "sng-imgs-5":"Movie-songs/maamannan.jpg" ,
+            "sng-imgs-6":"Movie-songs/maamannan.jpg" 
+        }
+        
+        document.getElementById("curtSngImg").src="Movie-songs/maamannan.jpg";
+
+    }
+
+    let selectItem=document.getElementsByClassName("song-display");
+    for(var i=0;i<selectItem.length;i++ ){
+        selectItem[i].onclick=function(event){
+            let clickId=event.target.id;
+            console.log(i);
+            changeImg(clickId);
+        }
+    }
+   
+    */
+
+</script>
+
+
+</body>
+</html>

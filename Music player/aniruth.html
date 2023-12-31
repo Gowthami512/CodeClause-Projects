@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        #songList {
+            list-style-type: none;
+            padding: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Music Player</h1>
+<ul id="songList"></ul>
+<p id="songDetails">Now Playing: </p>
+<img id="songImage" src="./Movie-songs/AR-Rahman.jpg" alt="Song Image" style="max-width: 300px; max-height: 300px;">
+
+<script>
+    // Sample list of songs
+    const songs = ["anirudh", "who-says", "song3"];  // Add your song names here
+
+    // Function to play a selected song
+    function playSong(selectedSong) {
+        //const songDetails = document.getElementById("songDetails");
+        const songImage = document.getElementById("songImage");
+
+        // Update song details
+        songDetails.textContent = `Now Playing: ${selectedSong}`;
+
+        // Update song image
+        const imagePath = `Movie-songs/${selectedSong}.jpg`;  // Adjust the path based on your structure
+        songImage.src = imagePath;
+    }
+
+    // Create and populate the song list
+    const songList = document.getElementById("songList");
+    songs.forEach(song => {
+        const listItem = document.createElement("li");
+        listItem.textContent = song;
+        listItem.addEventListener("click", () => playSong(song));
+        songList.appendChild(listItem);
+    });
+</script>
+
+</body>
+</html>
